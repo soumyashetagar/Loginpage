@@ -21,7 +21,13 @@
     <version>4.0.1</version>
     <scope>provided</scope>
 </dependency>
-    
+    <dependency>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.6.0.1398</version>
+    <type>pom</type>
+</dependency>
+
   </dependencies>
   <build>
         <pluginManagement>
@@ -37,6 +43,11 @@
                         <showWarnings>true</showWarnings>
                     </configuration>
                 </plugin>
+              <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.6.0.1398</version>
+      </plugin>
                    <plugin>
                   <groupId>org.jacoco</groupId>
                   <artifactId>jacoco-maven-plugin</artifactId>
