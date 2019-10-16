@@ -9,7 +9,7 @@ public class LoginTesting extends TestCase {
 	public void test() {
 		Login l=new Login();
 		String output =l.Test("admin", "admin");
-		assertEquals("failure",output);
+		assertEquals("success",output);
 		
 	}
 
